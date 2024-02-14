@@ -125,11 +125,15 @@
            buttons.forEach(function(button){
             button.addEventListener('click',function(e){
                 if (e.target.id === 'yes'){
-                    body.style.backgroundImage ="url(fireworks.gif)"                   
+                body.style.backgroundColor = "black"
+                body.style.backgroundImage ="url(fireworks.gif)"                   
+                body.style.color = "white"
                 }
                 if(e.target.id === 'no'){
                     body.innerHTML = "Estupid how could you do to me";
-                }
+                    body.style.textAlign = "center"
+                    body.style.alignItems = "center"
+                                }
             })
            })
         </script>
